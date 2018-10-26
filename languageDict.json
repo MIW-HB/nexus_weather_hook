@@ -38,23 +38,23 @@
         },
         "answer_warm" : {
             "0": "Etwas warm für diese Jahreszeit.",
-            "1": "Sehr mild für $monat.",
-            "2": "Es war auch schon mal kälter im $monat."
+            "1": "Sehr mild für $month.",
+            "2": "Es war auch schon mal kälter im $month."
         },
         "answer_hot": {
             "0": "Viel zu warm für diese Jahreszeit.",
             "1": "Es sollte eigentlich kälter sein.",
-            "2": "Für $monat ganz schön warm."
+            "2": "Für $month ganz schön warm."
         },
         "answer_cold": {
             "0": "Etwas zu kalt für diese Jahreszeit.",
-            "1": "Ein bisschen kühl für $monat.",
-            "2": "Es war auch schon mal wärmer im $monat."
+            "1": "Ein bisschen kühl für $month.",
+            "2": "Es war auch schon mal wärmer im $month."
         },
         "answer_freezy": {
             "0": "Viel zu kalt für diese Jahreszeit.",
             "1": "Es sollte eigentlich wärmer sein.",
-            "2": "Für $monat ganz schön kalt."
+            "2": "Für $month ganz schön kalt."
         },
         "answer_wet": {
             "0": "Viel zu nass für diese Jahreszeit.",
@@ -82,7 +82,7 @@
         "forecast": {
             "oneday": "Das Wetter für Morgen: $atmos bei $temperature Grad.",
             "twoday": "Übermorgen: $temperature Grad und $atmos.",
-            "fiveday": "Im Verlauf der Woche wirds insgesamt $tempdiff //PAU=100// und $atmos bei $temperature Grad."
+            "fiveday": "Im Verlauf der Woche wirds insgesamt $tempdiff \\\\PAU=300\\\\ und $atmos bei $temperature Grad."
         },
 
         "Normals": {

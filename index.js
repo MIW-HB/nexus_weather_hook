@@ -1,7 +1,7 @@
 /**
  *  @author Michael Weniger
  *  @copyright Michael Weniger
- *  @version 0.2.0
+ *  @version 0.2.3
  *  @summary gets weather-data from OpenWeatherMap regarding actual local weather and forecasts. Context-sensitive country lores are possible.
  * 
  * Use Strict mode ECMA Script 5+
@@ -13,7 +13,7 @@ const TestHook = require('./lib/hookTest.js');
 const Cache = require('./lib/cache.js');
 
 const API_URL = "https://api.openweathermap.org";
-const API_KEY = "<API_KEY>";
+const API_KEY = "< YOUR API-KEY GOES HERE>";
 const API_WEATHER_PATH = "/data/2.5/weather";
 const API_FORECAST_PATH = "/data/2.5/forecast";
 const API_LOCAL_CITY_ID = "2944388";
@@ -131,16 +131,47 @@ module.exports = class WeatherHook extends Hook {
         var humidity = data.main.humidity;
         var wind = this.evaluate_wind(data.wind);
         var city = API_LOCAL_CITY_NAME;
+        var comment = null;
 
         var text = this.captions.get('answer_temp');
+
+        for(var id in data.weather) { 
+            var cond = data.weather[id].id;
+            if(cond > 199 && cond < 233) comment = this.captions.get('answer_bad');
+            else {
+                switch(cond) {
+                    case 800: comment = this.captions.get('answer_good'); break;
+                    case 801: comment = this.captions.get('answer_good'); break;
+                    case 616: comment = this.captions.get('answer_bad'); break;
+                    case 617: comment = this.captions.get('answer_bad'); break;
+                    case 618: comment = this.captions.get('answer_bad'); break;
+                    case 619: comment = this.captions.get('answer_bad'); break;
+                    case 620: comment = this.captions.get('answer_bad'); break;
+                    case 621: comment = this.captions.get('answer_bad'); break;
+                    case 622: comment = this.captions.get('answer_bad'); break;
+                    case 502: comment = this.captions.get('answer_bad'); break;
+                    case 503: comment = this.captions.get('answer_bad'); break;
+                    case 504: comment = this.captions.get('answer_bad'); break;
+                    case 521: comment = this.captions.get('answer_bad'); break;
+                    case 522: comment = this.captions.get('answer_bad'); break;
+                    case 531: comment = this.captions.get('answer_bad'); break;
+                    case 313: comment = this.captions.get('answer_bad'); break;
+                    case 314: comment = this.captions.get('answer_bad'); break;
+                    case 302: comment = this.captions.get('answer_bad'); break;
+                    default: comment = this.captions.get("answer_neutral");
+                }
+            }
+            text += " " + data.weather[id].description + "."; 
+        }
+
+        text += " "+this.evaluate_temperature(temperature);
+        text += " "+this.get_text(comment);
+
         text = text.replace("$city", city);
         text = text.replace("$temperature", Math.round(temperature));
         text = text.replace("$windintensity", wind.strength[2]);
-        text = text.replace("$winddirection", wind.direction[0]);      
-
-        for(var id in data.weather) { text += " " + data.weather[id].description + "."; }
-
-        text += " "+this.evaluate_temperature(temperature);
+        text = text.replace("$winddirection", wind.direction[0]);
+        text = text.replace("$month", this.month);
 
         return text;
     }
@@ -183,7 +214,7 @@ module.exports = class WeatherHook extends Hook {
         else if (temp < standard.min) caps = this.captions.get("answer_cold");
         else if (temp > (standard.max * 1.5)) caps = this.captions.get("answer_hot");
         else if (temp > standard.max) caps = this.captions.get("answer_warm");
-        else caps = this.captions.get("answer_neutral");
+        else caps = "";
 
         result = this.get_text(caps);
 
@@ -234,11 +265,11 @@ module.exports = class WeatherHook extends Hook {
     }
 
     get_text(dictItem) {
-        var result = null;
+        var result = "";
         if(dictItem.length > 1) {
             result = dictItem[Math.random() * (dictItem.length -1)];
         } else {
-            result = dictItem[0];
+            result = dictItem[0] || "";
         }
         return result;
     }

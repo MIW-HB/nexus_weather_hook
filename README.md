@@ -1,7 +1,5 @@
 # Blackout Nexus hooks a Weather extent
 
-![Blackout logo](https://blackout.ai/img/logo/logo.png)
-
 |Author|Email|Latest version|State|
 |---|---|---|---|
 |Michael Weniger|info@mweniger.de|0.2.3|`BETA`
