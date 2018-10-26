@@ -1,0 +1,857 @@
+{
+    "de-DE": {
+        "directions": {
+            "N": [ "Norden", "Nord" ],
+            "NW": [ "Nordwesten", "Nordwest" ],
+            "W": [ "Westen", "West" ],
+            "SW": [ "Südwesten", "Südwest" ],
+            "S": [ "Süden", "Süd" ],
+            "SE": [ "Südosten", "Südest" ],
+            "E": [ "Osten", "Ost" ],
+            "NE": [ "Nordosten", "Nordost" ]
+        },
+        "wind": {
+            "0": [0.2, "leichter Wind", "leichtem Wind"],
+            "1": [5.4, "schwacher Wind", "schwachem Wind"],
+            "2": [7.9, "mäßiger Wind", "mäßigem Wind"],
+            "3": [10.7, "schwacher Wind", "schwachem Wind"],
+            "4": [17.1, "starker Wind", "starkem Wind"],
+            "5": [24.4, "Sturm", "Sturm"],
+            "6": [28.4, "starker Sturm", "starkem Sturm"],
+            "7": [32.6, "orkanartiger Sturm", "orkanartigem Sturm"],
+            "8": [9999, "Orkan", "Orkan"]
+        },
+        "answer_good": {
+            "0": "Es ist ganz traumhaft draussen.",
+            "1": "Bei dem Wetter wäre ich viel lieber draussen.",
+            "2": "Ist doch wundervoll da draussen oder?"
+        },
+        "answer_bad": {
+            "0": "Wie gut, dass wir hier drinnen sind.",
+            "1": "Es ist so furchtbar, da kuck ich lieber nicht aus dem Fenster.",
+            "2": "Was für eine Katastrophe, da draussen."
+        },
+        "answer_neutral": {
+            "0": "Geht so, würde ich sagen.",
+            "1": "Könnte schlimmer sein.",
+            "2": "Ist der Jahreszeit entsprechend."
+        },
+        "answer_warm" : {
+            "0": "Etwas warm für diese Jahreszeit.",
+            "1": "Sehr mild für $monat.",
+            "2": "Es war auch schon mal kälter im $monat."
+        },
+        "answer_hot": {
+            "0": "Viel zu warm für diese Jahreszeit.",
+            "1": "Es sollte eigentlich kälter sein.",
+            "2": "Für $monat ganz schön warm."
+        },
+        "answer_cold": {
+            "0": "Etwas zu kalt für diese Jahreszeit.",
+            "1": "Ein bisschen kühl für $monat.",
+            "2": "Es war auch schon mal wärmer im $monat."
+        },
+        "answer_freezy": {
+            "0": "Viel zu kalt für diese Jahreszeit.",
+            "1": "Es sollte eigentlich wärmer sein.",
+            "2": "Für $monat ganz schön kalt."
+        },
+        "answer_wet": {
+            "0": "Viel zu nass für diese Jahreszeit.",
+            "1": "Ganz schön feucht.",
+            "2": "Ich hoffe, ich fange nicht an zu rosten."
+        },
+        "answer_dry": {
+            "0": "Viel zu trocken für diese Jahreszeit.",
+            "1": "Das ist ja geradezu eine Dürre.",
+            "2": "Wenns so trocken ist, staubt es schnell, und Staub ist gar nicht gut für meine Gelenke."
+        },
+        "answer_windy": {
+            "0": "Es bläst ja ganz schön heftig.",
+            "1": "Pass auf, dass du nicht wegfliegst.",
+            "2": "Der Wind macht mir Angst."
+        },
+        "answer_thunder": {
+            "0": "Gewitter sind ein bisschen gruselig.",
+            "1": "Ich hoffe, hier schlägt kein Blitz ein. Darauf reagiert meine Elektronik äusserst empfindlich.",
+            "2": "Sei vorsichtig, wenn du wieder rausgehst."
+        },
+        "answer_temp": "$temperature Grad mit $windintensity aus $winddirection.",
+        "fallback": "Ich habe leider keine Ahnung, unser Wetterfrosch hat gerade frei.",
+
+        "forecast": {
+            "oneday": "Das Wetter für Morgen: $atmos bei $temperature Grad.",
+            "twoday": "Übermorgen: $temperature Grad und $atmos.",
+            "fiveday": "Im Verlauf der Woche wirds insgesamt $tempdiff //PAU=100// und $atmos bei $temperature Grad."
+        },
+
+        "Normals": {
+            "temperature": {
+                 "1": { "min":  -1.8, "max":  3.2, "avg":  0.7 },
+                 "2": { "min":  -1.4, "max":  4.3, "avg":  1.5 },
+                 "3": { "min":   0.7, "max":  8.0, "avg":  4.4 },
+                 "4": { "min":   3.3, "max": 12.5, "avg":  7.9 },
+                 "5": { "min":   7.4, "max": 17.6, "avg": 12.5 },
+                 "6": { "min":  10.5, "max": 20.6, "avg": 15.6 },
+                 "7": { "min":  12.2, "max": 21.8, "avg": 17.0 },
+                 "8": { "min":  11.9, "max": 22.1, "avg": 17.0 },
+                 "9": { "min":   9.4, "max": 18.6, "avg": 14.0 },
+                "10": { "min":   6.2, "max": 13.8, "avg": 10.0 },
+                "11": { "min":   2.4, "max":  7.9, "avg":  5.2 },
+                "12": { "min":  -0.3, "max":  4.4, "avg":  2.1 }
+            },
+            "humidity": {
+                 "1": { "min": 78, "max": 99, "avg": 88},
+                 "2": { "min": 75, "max": 96, "avg": 85},
+                 "3": { "min": 70, "max": 89, "avg": 79},
+                 "4": { "min": 64, "max": 81, "avg": 72},
+                 "5": { "min": 62, "max": 79, "avg": 70},
+                 "6": { "min": 64, "max": 81, "avg": 72},
+                 "7": { "min": 64, "max": 81, "avg": 72},
+                 "8": { "min": 67, "max": 86, "avg": 76},
+                 "9": { "min": 72, "max": 92, "avg": 81},
+                "10": { "min": 75, "max": 96, "avg": 85},
+                "11": { "min": 79, "max": 100, "avg": 89},
+                "12": { "min": 79, "max": 100, "avg": 89}
+            }
+        },
+        "Lores" : {
+            "common": {
+                "0": "Kräht der Hahn auf dem Mist, ändert sich das Wetter, oder es bleibt wie es ist.",
+                "1": "Dreht der Hahn sich auf dem Grill, macht das Wetter, was es will."
+            },
+            "funny": {
+                "windy": {
+                    "0": "Fliegen Bauern um den Turm, dann ist meistens starker Sturm.",
+                    "1": "Fliegt der Bauer übers Dach, ist der Wind weiß Gott nicht schwach."
+                }
+            },
+            "january": {
+                "common": {
+                    "0": "Anfang und Ende vom Januar zeigen das Wetter für ein ganzes Jahr.",
+                    "1": "Ist Anfang und Ende des Monats schön, so bedeutet's ein gutes Jahr.",
+                    "2": "Kommt der Januar vorm Februar, wirds Jahr wie es immer war.",
+                    "3": "Neujahrsnacht still und klar, deutet auf ein gutes Jahr!"
+                },
+                "cold": {
+                    "0": "Ist der Januar hell und weiß, wird der Sommer sicher heiß.",
+                    "1": "Januar muss vor Kälte knacken, wenn die Ernte gut soll sacken.",
+                    "2": "Januar je kälter und heller, Scheune und Fass um so völler.",
+                    "3": "Eis und Schnee im Januar, künden ein gesegnet Jahr",
+                    "4": "Der Januar muss krachen, soll der Frühling lachen.",
+                    "5": "Auf trockenen, kalten Januar folgt viel Schnee im Februar.",
+                    "6": "Januar kalt und rau, nützt dem Getreidebau.",
+                    "7": "Je frostiger der Januar, desto freundlicher das ganze Jahr.",
+                    "8": "Ist der Januar frostig und kalt, lockt uns bald der grüne Wald."
+                },
+                "sunny": {
+                    "0": "Ist Dreikönig hell und klar, gibt's viel Wein in diesem Jahr. Ist bis Dreikönig kein Winter, folgt keiner mehr dahinter."
+                },
+                "warm": {
+                    "0": "Ist der Januar feucht und lau, wird das Frühjahr trocken und rau.",
+                    "1": "Ist der Januar nass und warm, wird der Bauersmann gern arm.",
+                    "2": "Im Januar viel Muckentanz, verdirbt die Futterernte ganz.",
+                    "3": "Sind im Januar die Flüsse klein, gibt's im Herbst einen guten Wein.",
+                    "4": "Ist der Januar gelind, die Trauben im Oktober trefflich sind.",
+                    "5": "Wenn der Januar ist sehr milde, führt er gutes Frühjahr und heißen Sommer im Schilde.",
+                    "6": "Wenn der Frost nicht im Januar kommen will, so kommt er im März oder April.",
+                    "7": "Wächst das Gras im Januar, wächst es schlecht das ganze Jahr.",
+                    "8": "Januar ganz ohne Schnee tut den Bäumen weh.",
+                    "9": "Schlummert im milden Januar das Grün, so wird zeitig der Garten blühn."
+                },
+                "rainy": {
+                    "0": "Lässt der Januar Regen fallen, lässt der Lenz es gefrieren.",
+                    "1": "Regen im Januar, bringt die Saat in Gefahr.",
+                    "2": "Regen im Januar bringt doppelte Keime, aber nur halbe Frucht in der Scheune.",
+                    "3": "Ist der Januar sehr nass, bleibt leer des Winzers Fass.",
+                    "4": "Ist der Januar feucht und lau, wird das Frühjahr trocken und rau.",
+                    "5": "Ist der Januar nass und warm, wird der Bauersmann gern arm.",
+                    "6": "So viele Tropfen im Januar, so viel Schnee im Mai.",
+                    "7": "Hat der Januar viel Regen, bringt's den Früchten keinen Segen."
+                },
+                "dry": {
+                    "0": "Sind im Januar die Flüsse klein, gibt's im Herbst einen guten Wein.",
+                    "1": "Wenn der Januar trocken, füllt sich der Speicher mit Roggen.",
+                    "3": "Auf trockenen, kalten Januar folgt viel Schnee im Februar."
+                },
+                "foggy": {
+                    "0": "Nebel im Januar, bringen ein nass Frühjahr.",
+                    "1": "Braut der Januar Nebel gar, wird der Frühling nass fürwahr.",
+                    "2": "Wenn im Januar viel Nebel steigen, wird sich ein schönes Frühjahr zeigen.",
+                    "3": "Januar im Nebel weiß schickt im Märzen Schnee und Eis."
+                },
+                "windy": {
+                    "north": {
+                        "0": "Wenn im Jänner Nordwind fegt, die Lebensgeister werd'n bewegt."
+                    },
+                    "east": {
+                        "0": "Gibt's im Januar Wind von Osten, tut die Erde langsam frosten."
+                    },
+                    "south": {},
+                    "west": {}
+                },
+                "thunderstorm": {
+                    "0": "Im Januar Donnergroll macht Kästen und Kisten voll.",
+                    "1": "Donnert es im Januar, so mehret schnell der Fässer Schar.",
+                    "2": "Januardonner überm Feld, bringt noch große Kält'."
+                }
+                
+            },
+            "february": {
+                "common": {
+                    "0": "Die weiße Gans im Februar brütet Segen für das ganze Jahr.",
+                    "1": "Wenn der Nordwind im Februar nicht will, dann kommt er sicher im April.",
+                    "2": "Ende Februar hell und klar, bedeutet ein gutes Jahr."
+                },
+                "cold": {
+                    "0": "Ist´s ein kalter Februar, wirds ein gutes Roggenjahr.",
+                    "1": "Im Februar Schnee und Eis macht den Sommer lang und heiß.",
+                    "2": "Rauer Februar, schöner August.",
+                    "3": "Friert's im Februar ganz plötzlich, bleibt der Frost nicht lang gesetzlich.",
+                    "4": "Ist der Februar trocken und kalt, kommt im Frühjahr Hitze bald.",
+                    "5": "Besser im Februar erfrieren, als in der Sonne spazieren."
+                },
+                "warm": {
+                    "0": "An dem Dach der Eiszapf tropft, der Frühling an die Scheune klopft.",
+                    "1": "Wenn es im Februar nicht schneit, dann schneit es in der Osterzeit.",
+                    "2": "Wenn die Mücken tanzen im Februar, gibt es ein spätes Frühjahr.",
+                    "3": "Wenn der Februar warm uns macht, friert's im Mai noch oft bei Nacht.",
+                    "4": "Wenn's der Feburar gnädig macht, bringt der Lenz den Frost bei Nacht.",
+                    "5": "Wenn's im Februar nicht schneit, schneit es in der Osterzeit.",
+                    "6": "Februar mit Sonnenschein und Vogelsang macht dem Bauern Angst und Bang.",
+                    "7": "Ist der Februar sehr warm, friert man Ostern bis in den Darm."
+                },
+                "snow": {
+                    "0": "Bringt der Februar recht viel Schnee, bringt der Sommer guten Klee.",
+                    "1": "Im Februar Schnee und Eis macht den Sommer lang und heiß.",
+                    "2": "Besser im Februar erfrieren, als in der Sonne spazieren.",
+                    "3": "Wenn's im Februar stürmt und schneit, ist der Frühling nicht mehr weit."
+                },
+                "sunny": {
+                    "0": "Scheint im Februar die Sonne klar, gibt's Spätfrost und ein fruchtbar Jahr.",
+                    "1": "Scheint im Februar die Sonne heiß, gibt's noch sehr viel Schnee und Eis.",
+                    "2": "Anfang Februar ohne Regen folgt ein guter Erntesegen.",
+                    "3": "Anfang Februar Sonnenschein bringt viel Korn und Wein.",
+                    "4": "Februar hell und klar, gibt ein gutes Frühjahr.",
+                    "5": "Februar im Sonnenschein bringt viel Obst und guten Wein",
+                    "6": "Februar mit Sonnenschein und Vogelsang macht dem Bauern Angst und Bang.",
+                    "7": "Im Februar zuviel Sonne am Baum, lässt dem Obst keinen Raum",
+                    "8": "Ende Februar hell und klar, bedeutet ein gutes Jahr.",
+                    "9": "Ist's Anfang Februar hell und rein, wird ein langer Winter sein."
+                },
+                "rainy": {
+                    "0": "Läßt der Februar Wasser fallen, so läßts der März gefrieren.",
+                    "1": "Viel Regen im Februar - viel Sonnenschein das ganze Jahr.",
+                    "2": "Regen im Februar bringt flüssig Dünger fürs Jahr.",
+                    "3": "Ist's Anfang Februar feucht, der Winter sehr spät entweicht.",
+                    "4": "Wenn's im Februar regnerisch ist, hilft's soviel wie guter Mist.",
+                    "5": "Je nasser der Februar, desto nasser wird das ganze Jahr"
+                },
+                "dry": {
+                    "0": "Anfang Februar ohne Regen folgt ein guter Erntesegen.",
+                    "1": "Wenn's im Februar nicht schneit, schneit es in der Osterzeit.",
+                    "2": "Ist der Februar trocken und kalt, kommt im Frühjahr Hitze bald."
+                },
+                "foggy": {
+                    "0": "Nebel im Februar bringt Regen oft im Jahr."
+                },
+                "windy": {
+                    "common": {
+                        "0": "Heftige Winde im Februar vermelden ein fruchtbares Jahr.",
+                        "1": "Wenn der Nordwind im Februar nicht will, dann kommt er sicher im April.",
+                        "2": "Wenn's im Februar stürmt und schneit, ist der Frühling nicht mehr weit."
+                    },
+                    "north": {},
+                    "east": {
+                        "0": "Wenn der Nordwind im Februar nicht will, dann kommt er sicher im April."
+                    },
+                    "south": {
+                        "0": "Wenn der Nordwind im Februar nicht will, dann kommt er sicher im April."
+                    },
+                    "west": {
+                        "0": "Weht im Februar oft der West, wird das Jahr nicht allerbest.",
+                        "1": "Wenn der Nordwind im Februar nicht will, dann kommt er sicher im April."
+                    }
+                }
+            },
+            "march": {
+                "common": {
+                    "0": "März nicht zu trocken und nass, füllt dem Bauern Scheune und Fass."
+                },
+                "cold": {
+                    "0": "Märzenregen bringt keinen Segen.",
+                    "1": "Wenn es Anfang März noch friert, man's noch vierzig Tage spürt.",
+                    "2": "Im Märzen kalt und Sonnenschein, wird's eine gute Ernte sein.",
+                    "3": "Mitte März kalter Wind, noch vierzig Tage windig sind."
+                },
+                "warm": {
+                    "0": "An dem Dach der Eiszapf tropft, der Frühling an die Scheune klopft.",
+                    "1": "Ein heiterer März erfreut des Bauern Herz.",
+                    "2": "Je größer der Staub im Märzen, desto schöner die Ernte der Erbsen.",
+                    "3": "Taut's im März nach Sommerart, bekommt der Lenz 'nen weißen Bart.",
+                    "4": "Einem freundlichen März folgt ein freundlicher April."
+                },
+                "dry": {
+                    "0": "Trockener März und nasser April ist des Bauern Will.",
+                    "1": "Märzenstaub und Märzenwind, guten Sommers Vorboten sind.",
+                    "2": "Ein heiterer März erfreut des Bauern Herz.",
+                    "3": "Je größer der Staub im Märzen, desto schöner die Ernte der Erbsen.",
+                    "4": "Trockener März füllt den Keller.",
+                    "5": "Ist der Frühling trocken, gibt es einen nassen Sommer."
+                },
+                "rainy": {
+                    "0": "Ein feuchter März ist des Bauern Schmerz.",
+                    "1": "Ist der März tränenschwer, bleibt oft die Scheune leer.",
+                    "2": "Gibt's im März viel Regen, bringt die Ernte wenig Segen.",
+                    "3": "Märzregen geht dürrem Sommer entgegen.",
+                    "4": "Wie's im März regnet, wird's im Juni wiederregnen."
+                },
+                "snow": {
+                    "0": "Langer Schnee im März bricht dem Korn das Herz.",
+                    "1": "Ist's im Märzen sonnig, wird's dem Gärtner wonnig.",
+                    "2": "Märzenschnee und Jungfernpracht dauern oft kaum über Nacht.",
+                    "3": "Fürchte nicht den Schnee im März, drunter schläft ein warmes Herz."
+                },
+                "sunny": {
+                    "0": "Ein heiterer März erfreut des Bauern Herz.",
+                    "1": "Im Märzen kalt und Sonnenschein, wird's eine gute Ernte sein.",
+                    "2": "Märzensonne - kurze Wonne.",
+                    "3": "Je größer der Staub im Märzen, desto schöner die Ernte der Erbsen.",
+                    "4": "Mitte März klar, gibt ein gutes Honigjahr.",
+                    "5": "Einem freundlichen März folgt ein freundlicher April.",
+                    "6": "Ist im März der Himmel rein, so wird er's auch im Juni sein."
+                },
+                "foggy": {
+                    "0": "Soviel der März an Nebeln macht, sooft im Juni Donner kracht.",
+                    "1": "Soviel Nebel im März, soviel Gewitter im Sommer.",
+                    "2": "Nebelt's im März, windet's von südwärts.",
+                    "3": "Soviel Nebel im März, soviel Frost im Mai.",
+                    "4": "Märznebel bringt keine Not, aber Aprilnebel nimmt Wein und Brot."
+                },
+                "thunderstorm": {
+                    "0": "Donnert's in den März hinein, wird der Roggen gut gedeihn.",
+                    "1": "Gewitter im Märzen gehen dem Bauern zu Herzen.",
+                    "2": "Donnert's im März, so schneit's im Mai."
+                },
+                "windy": {
+                    "common": {
+                        "0": "Märzenstaub und Märzenwind, guten Sommers Vorboten sind.",
+                        "1": "Wenn im März noch viel Winde wehn, wird's im Maien warm und schön.",
+                        "2": "Mitte März kalter Wind, noch vierzig Tage windig sind."
+                    },
+                    "north": {},
+                    "east": {},
+                    "south": {},
+                    "west": {}
+                }
+            },
+            "april": {
+                "common": {
+                    "0": "Der April, der macht was er will.",
+                    "1": "Gehst du im April bei Sonne aus, lass nie den Regenschirm zu Haus.",
+                    "2": "Aprilwetter und Kartenglück, wechseln jeden Augenblick.",
+                    "3": "Ist im April das Wetter schön, kannst du Kohl und Erbsen sä'n",
+                    "4": "Wenn der April Spektakel macht, gibt's Heu und Korn in voller Pracht."
+                },
+                "cold": {
+                    "0": "Wenn der April stößt rau ins Horn, so steht es gut um Heu und Korn.",
+                    "1": "Fröste zu Anfang April bringen den Teufel ins Spiel.",
+                    "2": "April kalt und nass füllt Scheune und Fass.",
+                    "3": "April nass und kalt, wächst das Korn wie ein Wald."
+                },
+                "snow": {
+                    "0": "Im April ein tiefer Schnee, keinem Dinge tut er weh.",
+                    "1": "Schnee im April - gut düngen will.",
+                    "2": "Auf Aprilflöckchen folgen Maiglöckchen.",
+                    "3": "Aprilschnee bringt Gras und Klee."
+                },
+                "warm": {
+                    "0": "An dem Dach der Eiszapf tropft, der Frühling an die Scheune klopft.",
+                    "1": "April warm und nass, tanzt die Magd ums Butterfass.",
+                    "2": "Ist der April zu schön, kann im Mai der Schnee noch wehn.",
+                    "3": "Bleibt der April recht sonnig und warm, macht er den Bauern auch nicht arm."
+                },
+                "dry": {
+                    "0": "Trockener April stellt die Mühlen still.",
+                    "1": "Ist der April zu schön, kann im Mai der Schnee noch wehn.",
+                    "2": "Wenn Ende April der Regen fehlt, wird man danach mit ihm gequält",
+                    "3": "Ist im April das Wetter schön, kannst du Kohl und Erbsen sä'n",
+                    "4": "April windig und trocken, macht alles Wachstum stocken.",
+                    "5": "Ist der April zu trocken und licht, so gerät das Futter nicht.",
+                    "6": "Ist der Frühling trocken, gibt es einen nassen Sommer."
+                },
+                "sunny": {
+                    "0": "Ist der April schön und rein, wird der Mai milder sein.",
+                    "1": "Im April Sonnenschein, gibt vielen guten Wein.",
+                    "2": "Im April Sonnenschein, bringt uns viele Körner ein.",
+                    "3": "Gehst du im April bei Sonne aus, lass nie den Regenschirm zu Haus.",
+                    "4": "Ist der April zu schön, kann im Mai der Schnee noch wehn.",
+                    "5": "Ist im April das Wetter schön, kannst du Kohl und Erbsen sä'n",
+                    "6": "Bleibt der April recht sonnig und warm, macht er den Bauern auch nicht arm.",
+                    "7": "Ist der April zu trocken und licht, so gerät das Futter nicht."
+                },
+                "foggy": {
+                    "0": "Märznebel bringt keine Not, aber Aprilnebel nimmt Wein und Brot."
+                },
+                "rainy": {
+                    "0": "April warm und nass, tanzt die Magd ums Butterfass.",
+                    "1": "Regen im April, jeder Bauer will.",
+                    "2": "Gibt's im April mehr Regen als Sonnenschein, wird warm und trocken der Juni sein.",
+                    "3": "Bringt der April viel Regen, so deutet der auf Segen",
+                    "4": "Je mehr im April die Regen strömen, desto mehr wirst du vom Felde holen",
+                    "5": "April kalt und nass füllt Scheune und Fass.",
+                    "6": "Ist im April das Wetter schön, kannst du Kohl und Erbsen sä'n",
+                    "7": "Regen auf Walpurgisnacht hat stets ein gutes Jahr gebracht.",
+                    "8": "Aprilsturm und Regenwucht, kündet Wein und gold'ne Frucht.",
+                    "9": "Stellt im April sich Regen ein, so hat man keinen Sonnenschein.",
+                    "10": "Warmer Aprilregen - großer Segen",
+                    "11": "Nasser April - trockener Juni.",
+                    "12": "April nass und kalt, wächst das Korn wie ein Wald."
+                },
+                "thunderstorm": {
+                    "0": "Donner im April viel Gutes künden will.",
+                    "1": "Wenn der April Spektakel macht, gibt's Heu und Korn in voller Pracht."
+                },
+                "windy": {
+                    "common": {
+                        "0": "Wenn der April stößt rau ins Horn, so steht es gut um Heu und Korn.",
+                        "1": "April windig und trocken, macht alles Wachstum stocken.",
+                        "2": "Aprilsturm und Regenwucht, kündet Wein und gold'ne Frucht.",
+                        "3": "Bläst der April mit beiden Backen, gibt's viel zu jäten und zu hacken.",
+                        "4": "Wenn der April Spektakel macht, gibt's Heu und Korn in voller Pracht."
+                    },
+                    "north": {
+                        "0": "Bläst im April der Nord, so dauert gutes Wetter fort."
+                    },
+                    "east": {},
+                    "south": {},
+                    "west": {}
+                }
+            },
+            "may": {
+                "common": {
+                    "0": "Maikäferjahr - ein gutes Jahr.",
+                    "1": "Abendtau im Mai gibt das rechte Heu.",
+                    "2": "Wenn's Wetter gut am ersten Mai, gibt es viel und gutes Heu.",
+                    "3": "Trockener Mai - Wehgeschrei, feuchter Mai bringt Glück herbei.",
+                    "4": "Mitte Mai muss vorüber sein, will man vor Nachtfrost sicher sein.",
+                    "5": "Erst Mitte Mai ist der Winter vorbei."
+                },
+                "cold": {
+                    "0": "Erst in der Mitte des Mai ist der Winter vorbei.",
+                    "1": "Fällt Reif am ersten Mai, bringt er im Feld viel Segen herbei.",
+                    "2": "Ein kühler Mai wird hoch geacht', hat stets ein gutes Jahr gebracht.",
+                    "3": "Maienfröste - unnütze Gäste.",
+                    "4": "Mitte Mai muss vorüber sein, will man vor Nachtfrost sicher sein."
+                },
+                "warm": {
+                    "0": "Kommt im März die Sommerzeit, ist's länger hell für Schwarzarbeit.",
+                    "1": "Mairegen, mild und warm, tut den Früchten keinen Harm.",
+                    "2": "Im Mai heiß und trocken, kann der Bauersmann frohlocken."
+                },
+                "rainy": {
+                    "0": "Regen im Mai, April vorbei.",
+                    "1": "Auf nassen Mai kommt ein trockener Juni herbei.",
+                    "2": "Regen im Mai bringt Wohlstand und Heu.",
+                    "3": "Mairegen, mild und warm, tut den Früchten keinen Harm.",
+                    "4": "Mairegen auf die Saaten, dann regnet es Dukaten.",
+                    "5": "Trockener Mai - Wehgeschrei, feuchter Mai bringt Glück herbei."
+                },
+                "dry": {
+                    "0": "Ist der Frühling trocken, gibt es einen nassen Sommer.",
+                    "1": "Im Mai heiß und trocken, kann der Bauersmann frohlocken.",
+                    "2": "Trockener Mai - Wehgeschrei, feuchter Mai bringt Glück herbei.",
+                    "3": "Mitte Mai ohne Regen, bringt den Winzern großen Segen.",
+                    "4": "Mai ohne Regen, fehlt's allerwegen.",
+                    "5": "Ist der Frühling trocken, gibt es einen nassen Sommer"
+                },
+                "thunderstorm": {
+                    "0": "Donner im Mai führt guten Wind herbei.",
+                    "1": "Donnert's im Mai recht viel, hat der Bauer ein gutes Spiel.",
+                    "2": "Das Jahr fruchtbar sei, wenn's viel donnert im Mai."
+                },
+                "windy": {
+                    "common": {
+                        "0": "Windet's am ersten Mai, dann das ganze Jahr.",
+                        "1": "Wind im Mai verweht den Gram, der Juni wird danach stets warm."
+                    },
+                    "north": {
+                        "0": "Nordwind im Mai bringt Trockenheit herbei."
+                    },
+                    "east": {
+                        "0": "Servatius' Hund der Ostwind ist, hat schon manch' Blümlein tot geküsst."
+                    },
+                    "south": {},
+                    "west": {}
+                }
+            },
+            "june": {
+                "common": {
+                    "0": "Soll Feld und Garten wohl gedeihn, dann braucht's im Juni Sonnenschein.",
+                    "1": "Ist der Juni warm und nass, gibt's viel Korn und noch mehr Gras",
+                    "2": "Mensch und Juniwind ändern sich geschwind.",
+                    "3": "Anfang Juni wird ausgemacht, ob vierzig Tage die Sonne lacht.",
+                    "4": "Soll gedeihen Korn und Wein, muss im Juni Wärme sein.",
+                    "5": "Wie's Wetter Mitte Juni fällt, es bis zum Monatsende hält."
+                },
+                "warm": {
+                    "0": "Ist der Juni warm und nass, gibt's viel Korn und noch mehr Gras",
+                    "1": "Soll gedeihen Korn und Wein, muss im Juni Wärme sein.",
+                    "2": "Stellt der Juni sich milde ein, wird mild auch der Dezember sein.",
+                    "3": "Soll gedeihen Korn und Wein, muss im Juni Wärme sein.",
+                    "4": "Bringt der Juni trockne Glut, dann gerät der Wein recht gut."
+                },
+                "cold": {
+                    "0": "Kälte im Juni verdirbt, was Nässe im Mai erwirbt.",
+                    "1": "Ein Nachtfrost noch im Junius, macht ohn' Ausnahm' viel Verdruss.",
+                    "2": "Kalter Juniregen, bringt Wein und Honig keinen Segen",
+                    "3": "Bleibt der Juni kühl, wird's dem Bauern schwül."
+                },
+                "rainy": {
+                    "0": "Juniregen und Brauttränen dauern so lange wie's Gähnen.",
+                    "1": "Juni nass - viel Bodengras.",
+                    "2": "Ist der Juni warm und nass, gibt's viel Korn und noch mehr Gras",
+                    "3": "Im Juni ein Gewitterschauer macht das Herz gar froh dem Bauer.",
+                    "4": "Hat der Juni keinen Sonnenschein, dann kommt das Heu nie trocken ein.",
+                    "5": "Wenn der Juni bringt Regen, so gibt es auch viel Traubensegen",
+                    "6": "Ist mitte Juni starker Regen, bringt er unermesslichen Segen.",
+                    "7": "Juni nass, leer Scheune und Fass",
+                    "8": "Fällt Juniregen in den Roggen, so bleibt der Weizen auch nicht trocken.",
+                    "9": "Kalter Juniregen, bringt Wein und Honig keinen Segen"
+                },
+                "dry": {
+                    "0": "Juni, mehr trocken als nass, füllt mit gutem Wein das Fass.",
+                    "1": "Bringt der Juni trockne Glut, dann gerät der Wein recht gut."
+                },
+                "sunny": {
+                    "0": "Soll Feld und Garten wohl gedeihn, dann braucht's im Juni Sonnenschein.",
+                    "1": "Ende Juni hell und klar bringt ein gutes Jahr."
+                },
+                "thunderstorm": {
+                    "0": "Bläst der Juni ins Donnerhorn, so bläst er ins Land das gute Korn.",
+                    "1": "Im Juni ein Gewitterschauer macht das Herz gar froh dem Bauer.",
+                    "2": "Gibt's im Juni Donnerwetter, wird auch das Getreide fetter.",
+                    "3": "Juni viel Donner, verkündet trüben Sommer."
+                },
+                "windy": {
+                    "common": {
+                        "0": "Menschensinn und Juniwind ändern sich oft sehr geschwind."
+                    },
+                    "north": {
+                        "0": "Durch Juniwind aus Norden ist noch nichts verdorben worden.",
+                        "1": "Nordwind, der im Juni weht, nicht im besten Rufe steht, kommt er an mit kühlem Gruß, bald Gewitter folgen muss.",
+                        "2": "Nordwind im Juni gesandt, weht Korn ins ganze Land."
+                    }
+                }
+            },
+            "july": {
+                "common": {
+                    "0": "Soll gedeien Obst und Wein, muss der Juli trocken sein.",
+                    "1": "Im Juli will der Bauer lieber schwitzen, als untätig hinterm Ofen sitzen.",
+                    "2": "Hagelt's im Juli und August, ist's aus mit des Bauern Freud und Lust.",
+                    "3": "Juli, schön und klar, gibt ein gutes Erntejahr."
+                },
+                "warm": {
+                    "0": "Cremen sich die Schweine ein, wird's ein heißer Sommer sein.",
+                    "1": "Juli heiß, lohnt Müh und Schweiß.",
+                    "2": "Macht der Juli uns heiß, bringt der Winter viel Eis.",
+                    "3": "Nur inder Juliglut, gedeihen Wein und Getreide gut.",
+                    "4": "Im Juli will der Bauer lieber schwitzen, als untätig hinterm Ofen sitzen.",
+                    "5": "Ist's im Juli recht hell und warm, friert's um Weihnachten Reich und Arm.",
+                    "6": "Bringt der Juli heiße Glut, so gerät der September gut."
+                },
+                "cold": {
+                    "0": "Wenn im Juli das Vieh nicht schwitzt, es im August oft donnert und blitzt.",
+                    "1": "Im Juli will der Bauer lieber schwitzen, als untätig hinterm Ofen sitzen.",
+                    "2": "Hagelt's im Juli und August, ist's aus mit des Bauern Freud und Lust.",
+                    "3": "Kalter Juliregen für die Rehbrunft kein Segen.",
+                    "4": "Muss im Juli man nicht schwitzen, tut die Jahresplag' nichts nützen."
+                },
+                "rainy": {
+                    "0": "Ist der Juli trüb und nass, bleiben leer Scheune und Fass.",
+                    "1": "Wenns im Juli viel regnet, man viel giftigem Mehltau begegnet.",
+                    "2": "Fänget der Juli zu tröpfeln an, so wird man lange Regen hab'n.",
+                    "3": "Im Juli will der Bauer lieber schwitzen, als untätig hinterm Ofen sitzen.",
+                    "4": "Fällt im staubigen Juli zeitig Regen, ist's für Natur von reichem Segen.",
+                    "5": "Kalter Juliregen für die Rehbrunft kein Segen.",
+                    "6": "Juliregen nimmt den Erntesegen.",
+                    "7": "Hört der Juli mit Regen auf, geht leicht ein Teil der Ernte drauf."
+                },
+                "dry:": {
+                    "0": "Soll gedeien Obst und Wein, muss der Juli trocken sein.",
+                    "1": "Fällt im staubigen Juli zeitig Regen, ist's für Natur von reichem Segen."
+                },
+                "sunny": {
+                    "0": "Juli Sonnenstrahl gibt eine gute Rübenzahl.",
+                    "1": "So golden die Sonne im Juli strahlt, so golden sich er Roggen mahlt.",
+                    "2": "Ist's im Juli recht hell und warm, friert's um Weihnachten Reich und Arm.",
+                    "3": "Juli, schön und klar, gibt ein gutes Erntejahr."
+                },
+                "thunderstorm": {
+                    "0": "Ein tüchtig Juligewitter ist gut für Winzer und Schnitter.",
+                    "1": "Hagelt's im Juli und August, ist's aus mit des Bauern Freud und Lust."
+                }
+            },
+            "august": {
+                "common": {
+                    "0": "Hagelt's im Juli und August, ist's aus mit des Bauern Freud und Lust.",
+                    "1": "Ist es Anfang August sehr heiß, bleibt der Winter lange weiß.",
+                    "2": "Soll der nächste Wein gedeih'n, muss Sankt Benno windstill sein.",
+                    "3": "Immer eitel Sonnenschein kann auch im August nicht sein.",
+                    "4": "Wie der August war, wird der künftige Februar."
+                },
+                "warm": {
+                    "0": "Cremen sich die Schweine ein, wird's ein heißer Sommer sein.",
+                    "1": "Fängt der August mit Hitze an, bleibt sie lang die Schlittenbahn.",
+                    "2": "Ist es Anfang August sehr heiß, bleibt der Winter lange weiß.",
+                    "3": "Der August muss Hitze haben, sonst Obstbaumsegen wird begraben."
+                },
+                "rainy": {
+                    "0": "Im August der Morgenregen wird sich meist vor Mittag legen.",
+                    "1": "Es pflegt im August beim ersten Regen die Hitze sich zu legen.",
+                    "2": "Stellt im August sich Regen ein, so regnet's Honig und guten Wein.",
+                    "3": "Immer eitel Sonnenschein kann auch im August nicht sein.",
+                    "4": "Je dichter der Regen im August, je dünner wird der Most.",
+                    "5": "Augustregen wirkt wie Gift, wenn er die reifenden Trauben trifft.",
+                    "6": "Ein trockener August hat die Leute noch nie arm gemacht - ein nasser schon."
+                },
+                "dry": {
+                    "0": "Wenn's im August nicht regnet, ist der Winter mit Schnee gesegnet.",
+                    "1": "Wenn's im August ohne Regen abgeht, das Pferd vor leerer Krippe steht.",
+                    "2": "Ein trockener August hat die Leute noch nie arm gemacht - ein nasser schon.",
+                    "3": "Im August wenig Regen kommt dem Bauern gelegen.",
+                    "4": "Ein trockner August des Bauern Lust."
+                },
+                "sunny": {
+                    "0": "Augustsonne, die schon sehr früh brennt, nimmt nachmittags kein gutes End'."
+                },
+                "thunderstorm": {
+                    "0": "Hagelt's im Juli und August, ist's aus mit des Bauern Freud und Lust.",
+                    "1": "Ist der August am Anfang heiß, wird der Winter streng und weiß, stellen sich Gewitter ein, wird's bis Ende auch so sein.",
+                    "2": "Fängt der August mit Donnern an, er's bis zum End nicht lassen kann.",
+                    "4": "Immer eitel Sonnenschein kann auch im August nicht sein.",
+                    "5": "Dem August sind Donner nicht Schande, sie nützen der Luft und dem Lande.",
+                    "6": "Bringt der August viel Gewitter, wird der Winter kalt und bitter."
+                },
+                "windy": {
+                    "common": {
+                        "0": "Stürmt es im August, gibt es weder Wein noch Most.",
+                        "1": "Immer eitel Sonnenschein kann auch im August nicht sein."
+                    },
+                    "north": {
+                        "0": "Wenn es im August von Norden weht, beständiges Wetter vor dir steht.",
+                        "1": "Weht im August der Wind aus Nord, ziehen die Schwalben noch lange nicht fort."
+                    }
+                }
+            },
+            "september": {
+                "common": {
+                    "0": "Der September ist der Mai des Herbstes.",
+                    "1": "September schön in den ersten Tagen, will den ganzen Herbst ansagen."
+                },
+                "warm": {
+                    "0": "Warmer und trockener Septembermond mit reifen Früchten reichlich belohnt.",
+                    "1": "Ist der September lind, ist der Winter ein Kind.",
+                    "2": "Durch Septembers heiteren Blick, schaut noch einmal der Mai zurück.",
+                    "3": "September warm und klar, verheißt ein gutes nächstes Jahr.",
+                    "4": "Auf einen heiteren und warmen September folgt gern ein trüber und rauer Oktober.",
+                    "5": "Warme Nächte bringen Herrenwein, bei kalten Nächten wird er sauer sein."
+                },
+                "cold": {
+                    "0": "Abends der September rau, bringt er morgens vielen Tau."
+                },
+                "dry": {
+                    "0": "September schön in den ersten Tagen, will den ganzen Herbst ansagen.",
+                    "1": "Warmer und trockener Septembermond mit reifen Früchten reichlich belohnt."
+                },
+                "wet": {
+                    "0": "Septemberanfang mit feinem Regen kommt allzeit dem Bauer gelegen."
+                },
+                "sunny": {
+                    "0": "September schön in den ersten Tagen, will den ganzen Herbst ansagen.",
+                    "1": "Warmer und trockener Septembermond mit reifen Früchten reichlich belohnt.",
+                    "2": "Durch Septembers heiteren Blick, schaut noch einmal der Mai zurück.",
+                    "3": "September warm und klar, verheißt ein gutes nächstes Jahr.",
+                    "4": "Auf einen heiteren und warmen September folgt gern ein trüber und rauer Oktober."
+                },
+                "rainy": {
+                    "0": "Wenn Septemberregen den Weinberg trifft, so ist der Wein schlimmer als Gift.",
+                    "1": "Septemberanfang mit feinem Regen kommt allzeit dem Bauer gelegen.",
+                    "2": "Septemberregen - dem Bauern Segen, dem Winzer ein Gift, wenn er ihn trifft."
+                },
+                "thunderstorm": {
+                    "0": "Wenn Septemberregen den Weinberg trifft, so ist der Wein schlimmer als Gift.",
+                    "1": "Donnert's im September noch, liegt der Schnee um Weihnacht hoch.",
+                    "2": "Wenn der September noch donnern kann, setzen die Bäume viel Blüten an.",
+                    "3": "Nach Septembergewittern im Winter viel Schnee- und Kältezittern."
+                },
+                "foggy": {
+                    "0": "Septembernebel, wenn er steigend sich erhält, bringt Regen, doch klar Wetter, wenn er fällt.",
+                    "1": "Viel Nebel im September über Tal und Höh', bringt im Winter tiefen Schnee."
+                },
+                "snow": {
+                    "0": "Fällt im September Schnee in der Alp, kommt der Winter nicht so bald."
+                }
+            },
+            "october": {
+                "common": {
+                    "0": "Wenn das Blatt am Baume bleibt, ist der Winter noch sehr weit.",
+                    "1": "Hilft der Oktober nicht mit Sonne, so hat der Winter keine Wonne."
+                },
+                "warm": {
+                    "0": "Ist der Oktober warm und fein, kommt ein harter Winter rein.",
+                    "1": "Warmer Oktober bringt fürwahr uns sehr kalten Februar.",
+                    "2": "Ist der Oktober freundlich und mild, ist der März dafür rau und wild.",
+                    "3": "Warmer Oktober bringt fürwahr stets einen kalten Januar."
+                },
+                "cold": {
+                    "0": "Ist der Oktober aber nass und kühl, mild der Winter werden will.",
+                    "1": "Wenn's im Oktober friert und schneit, bringt der Januar milde Zeit.",
+                    "2": "Bringt Oktober Frost und Wind, wird der Januar gelind.",
+                    "3": "Ist der Oktober kalt, macht er Raupenfraß halt.",
+                    "4": "Bringt der Oktober schon Schnee und Eis, ist's schwerlich im Januar kalt und weiß.",
+                    "5": "Oktober rau, Januar lau."
+                },
+                "rainy": {
+                    "0": "Ist der Oktober aber nass und kühl, mild der Winter werden will.",
+                    "1": "Oktoberregen verspricht ein Jahr voller Segen.",
+                    "2": "Wie im Oktober die Regen hausen, so im Dezember die Winde sausen.",
+                    "3": "Ist es im Oktober trocken, folgt ein Sommer mit nassen Socken.",
+                    "4": "Nichts kann mehr vor Raupen schützen, als wenn der Oktober erscheint mit Pfützen."
+                },
+                "sunny": {
+                    "0": "Ist der Oktober warm und fein, kommt ein harter Winter rein.",
+                    "2": "Ist der Oktober freundlich und mild, ist der März dafür rau und wild.",
+                    "3": "Oktober-Sonnenschein schüttet Zucker in den Wein.",
+                    "4": "Oktobersonne - Winzers Wonne."
+                },
+                "snow": {
+                    "0": "Wenn's im Oktober friert und schneit, bringt der Januar milde Zeit.",
+                    "1": "Bringt der Oktober schon Schnee und Eis, ist's schwerlich im Januar kalt und weiß.",
+                    "2": "Oktoberschnee tut Pflanzen und Saaten weh."
+                },
+                "foggy": {
+                    "0": "Viel Nebel im Oktober - viel Schnee im Winter.",
+                    "1": "Im Oktober der Nebel viel, bringt im Winter der Flocken Spiel."
+                },
+                "thunderstorm": {
+                    "0": "Bringt der Oktober noch Gewitter, wird der Winter meist ein Zwitter.",
+                    "1": "Gewitter im Oktober künden, dass du wirst nassen Winter finden."
+                },
+                "windy": {
+                    "common": {
+                        "0": "Im Oktober Sturm und Wind uns den frühen Winter künd.",
+                        "1": "Oktoberwind - glaube es mir - verkündet harten Winter dir.",
+                        "2": "Bringt Oktober Frost und Wind, wird der Januar gelind."
+                    }
+                }
+            },
+            "november": {
+                "common": {
+                    "0": "November tritt oft hart herein, braucht nichts dahinter zu sein.",
+                    "1": "Im November Morgenrot mit langem Regen droht.",
+                    "2": "Wie der November, so ist auch der nächste Mai."
+                },
+                "wet": {
+                    "0": "November nass, bringt jedem was."
+                },
+                "cold": {
+                    "0": "Im November kalt und klar, wird mild und trüb der Januar.",
+                    "1": "Wenn der November regnet und frostet, dies leicht die Saat das Leben kostet.",
+                    "2": "Ein heller, kalter, trockener November gibt Regen und milde Luft im Januar."
+                },
+                "rainy": {
+                    "0": "Novemberwasser auf den Wiesen, dann wird das Gras im Lenze sprießen.",
+                    "1": "Wenn im November die Wasser steigen, dies nassen Sommer will anzeigen.",
+                    "2": "November nass, bringt jedem was.",
+                    "3": "Wenn der November regnet und frostet, dies leicht die Saat das Leben kostet.",
+                    "4": "Viel Regen im November, viel Wind im Dezember."
+                },
+                "sunny": {
+                    "0": "Ein heller, kalter, trockener November gibt Regen und milde Luft im Januar."
+                },
+                "snow": {
+                    "0": "Wenn der November regnet und frostet, dies leicht die Saat das Leben kostet.",
+                    "1": "Novemberschnee tut den Saaten wohl, nicht weh.",
+                    "2": "November sternenklar - wird bald den Frost gewahr.",
+                    "3": "Je mehr Schnee im November fällt, um so fruchtbringender ist das Feld."
+                },
+                "foggy": {
+                    "0": "Viel Nebel im November, viel Schnee im Winter."
+                },
+                "thunderstorm": {
+                    "0": "November Donner hat die Kraft, dass er viel Getreide schafft.",
+                    "1": "Wenn der November blitzt und kracht, im nächsten Jahr der Bauer lacht.",
+                    "2": "Wenn's im November donnern tut, wird das nächste Jahr nicht gut.",
+                    "3": "Novemberdonner schafft guten Sommer."
+                },
+                "windy": {
+                    "common": {
+                        "0": "Novemberwind scheut Schaf und Rind."
+                    }
+                }
+            },
+            "december": {
+                "common": {
+                    "0": "Wenn sich das Jahr dem Ende neigt, der Bauer in die Wanne steigt.",
+                    "1": "Wenn man den Dezember soll loben, muss er frieren und toben.",
+                    "2": "Wie der Dezember pfeift, so tanzt der Juni.",
+                    "3": "Je dicker das Eis um Weihnacht liegt, je zeitiger der Bauer Frühling kriegt."
+                },
+                "warm": {
+                    "0": "Wenn's im Dezember nicht wintert, sommert's im Juni auch nicht.",
+                    "1": "Dezember mild mit viel Regen, ist für die Saat kein großer Segen.",
+                    "2": "Dezember warm - Gott erbarm.",
+                    "3": "Dezemberwärme hat Eis dahinter.",
+                    "4": "Weihnachten sei nur auf dem Tische grün, im Dezember sollen die Eisblumen blühn."
+                },
+                "dry": {
+                    "0": "Ein dunkler Dezember bringt ein gutes Jahr, ein nasser macht es unfruchtbar."
+                },
+                "sunny": {
+                    "0": "Ist Weihnachten hell und klar, so hofft man auf ein fruchtbar' Jahr."
+                },
+                "rainy": {
+                    "0": "Ein dunkler Dezember bringt ein gutes Jahr, ein nasser macht es unfruchtbar.",
+                    "1": "Regnet's an Sankt Nikolaus, wird der Winter streng und graus.",
+                    "2": "Dezember mild mit viel Regen, ist für die Saat kein großer Segen.",
+                    "3": "Ist der Dezember wild mit viel Regen, dann hat das nächste Jahr wenig Segen."
+                },
+                "cold": {
+                    "0": "Im Dezember Schnee und Frost, das verheißt viel Korn und Most.",
+                    "1": "Weißer Dezember, viel Kälte darein, bedeutet, das Jahr soll fruchtbar sein.",
+                    "2": "Ist's im Dezember kalt, wird der Winter zwar hart, aber der Frühling kommt bald.",
+                    "3": "Es folgte noch allezeit und immerdar auf kalten Dezember ein fruchtbar Jahr.",
+                    "4": "Herrscht im Dezember recht strenge Kält' , sie volle achtzehn Wochen anhält.",
+                    "5": "Auf kalten Dezember mit tüchtigem Schnee folgt ein fruchtbar Jahr mit reichlich Klee.",
+                    "6": "Je dicker das Eis um Weihnacht liegt, je zeitiger der Bauer Frühling kriegt.",
+                    "7": "Dezember kalt mit Schnee, tut dem Ungeziefer weh."
+                },
+                "snow": {
+                    "0": "Im Dezember Schnee und Frost, das verheißt viel Korn und Most.",
+                    "1": "Weißer Dezember, viel Kälte darein, bedeutet, das Jahr soll fruchtbar sein.",
+                    "2": "Sturm im Dezember und Schnee, dann schreit der Bauer juchhe.",
+                    "3": "Auf kalten Dezember mit tüchtigem Schnee folgt ein fruchtbar Jahr mit reichlich Klee.",
+                    "4": "Dezember kalt mit Schnee, tut dem Ungeziefer weh."
+                },
+                "foggy": {
+                    "0": "Viel Wind und Nebel in Dezembertagen, schlechten Frühling und schlechtes Jahr ansagen."
+                },
+                "thunderstorm": {
+                    "0": "Donnert's im Dezember gar, kommt viel Wind das nächste Jahr."
+                },
+                "windy": {
+                    "common": {
+                        "0": "Sturm im Dezember und Schnee, dann schreit der Bauer juchhe.",
+                        "1": "Viel Wind und Nebel in Dezembertagen, schlechten Frühling und schlechtes Jahr ansagen.",
+                        "2": "Wenn Winde wehen im Advent, so wird uns viel Obst gesend.",
+                        "3": "Viel Wind in den Weihnachtstagen, reichlich Obst die Bäume tragen."
+                    },
+                    "east": {
+                        "0": "Weht der Dezemberwind aus Ost, bringt er den Kranken schlechten Trost."
+                    }
+                }
+            }
+        }
+    }
+}
