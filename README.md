@@ -4,15 +4,10 @@
 
 |Author|Email|Latest version|State|
 |---|---|---|---|
-|Michael Weniger|info@mweniger.de|0.0.1|`BETA`
+|Michael Weniger|info@mweniger.de|0.2.3|`BETA`
 
 ## Hook integration
 See: https://github.com/Blackout-Technologies/nexus-hook
-
-## Bauernregeln:
-https://www.wetter.de/bauernregeln
-
-https://www.spruecheportal.de/bauernweisheiten.php
 
 ### Prepare training function
 ```JavaScript
